@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,600;1,400&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+body{
+    font-family: 'Finlandica', sans-serif;
+}
+
+.logo h1{
+    border: 2px dotted #7c5295;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: whitesmoke;
+
+}
+
+h1,h2,p{
+    margin: 1.6rem 0;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+   
+}
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+    
+}
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    
+}
+img {
+    width: 100%;
+    height: auto;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+section{
+    padding: 100px 0;
+
+}
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    color: whitesmoke;
+    
+
+}
+.logo  {
+    font-size: 3.2rem;
+    color: #7c5295;
+    margin: 0;
+}
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+nav box-icon{
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+
+}
+nav ul li a:hover{
+    
+    color:#af7ace;
+    transition: .3s ease-in-out;
+}
+.header-content{
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 10%;
+
+}
+form{
+    margin: 2.4rem 0;
+
+}
+input{
+    font-size: 1.8rem;
+
+}
+input[type=text],
+input[type=email]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    
+
+}
+input[type=submit]{
+    width: 50%;
+    background: #af7ace;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+input::placeholder{
+    font-size: 1.3rem;
+    color:rgba(0, 0, 0, 0.5)
+}
+/* about */
+.about-left,
+.about-middle,
+.about-right{
+    flex-basis:30%;
+    padding: 1.6rem;
+}
+.btn{
+    width: auto;
+    background: #af7ace;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    margin: 2rem 0;
+    display: inline-block;
+    font-weight: small;
+
+}
+.about2{
+    background: #1c012c;
+    color: whitesmoke;
+}
+.about2-left{
+    flex-basis: 50%;
+
+}
+.about2-right{
+    flex-basis: 40%;
+}
+
+.about2 .card{
+    
+    padding: 3rem 8rem;
+    color: rgb(74, 0, 88);
+    background: rgb(229, 193, 236);
+    margin: 1.6rem;
+    font-weight: bold;
+    
+    text-align: center;
+}
+box-icon {
+    font-size: 60px;
+}
+.process .row{
+    justify-content: center;
+
+}
+.process-content{
+    margin-top: 100px;
+}
+.progress-bar{
+    width: 80%;
+    height: 2px;
+    background-color: #1c012c;
+    margin: auto;
+    position: relative;
+
+}
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(151, 38, 173);
+    background: white;
+    position: absolute;
+
+}
+
+.progress-bar .c1 {
+    top: -8px;
+    left: 50px;
+}
+
+.progress-bar .c2 {
+    top: -8px;
+    left: 50%;
+}
+
+.progress-bar .c3 {
+    top: -8px;
+    right: 50px;
+}
+.box1,
+.box2,
+.box3{
+    padding: 1.8rem;
+}
+.process .box2{
+    text-align: center;
+    
+}
+.process .box3{
+    text-align: right;
+}
+.process-content h2{
+    color:rgb(151, 38, 173);
+}
+.box1 h2{
+    padding-left: 8px;
+}
+.box3 h2{
+    padding-right: 8px;
+}
+
+.testimony{
+    background:#1c012c;
+    color: whitesmoke;
+}
+.testimony .test{
+    background:rgba(242, 192, 255, 0.329);
+    padding: 4rem 8rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+}
+.testimony .image{
+    height: 80px;
+    width: 80px;
+}
+.testimony img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact .row{
+    justify-content: center;
+}
+.center form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form input[type=text],
+.contact form input[type=email]{
+    width: 100%;
+
+}
+.contact textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    font-size: 1.4rem;
+    border: 1px solid whitesmoke;
+    resize: none;
+    margin: 1.2rem 0;
+    font-family:'Finlandica', sans-serif;
+    color: rgb(107, 107, 107);
+}
+.contact input[type=submit]{
+    width: 100%;
+}
+footer {
+    height: 100px;
+    background-color:#1c012c;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    
+    justify-content: center;
+}
+.end{
+    height: 0;
+    width: 100%;
+    line-height: 20px;
+    justify-content: center;
+    text-align: center;
+
+}
+.end a{
+    background: #ffffff;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 2px solid #7c5295;
+    color: black;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* Media queries */
+@media only screen and (max-width:768px) {
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+    nav box-icon{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+
+    }
+    nav ul{
+        background: whitesmoke;
+        display: none;
+
+    }
+    .showmenu{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        padding: 2% 0;
+        
+    }
+    nav ul li a{
+        color: black;
+    }
+    nav ul li {
+        display: block;
+        padding: 2% 0;
+    }
+
+    nav ul li a {
+        color: #222;
+    }
+
+    /* header content */
+    .header-content{
+        width: 100%;
+        top:16%;
+        left:0;
+        text-align: center;
+        padding:0 8px;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=submit]{
+        width: 80%;
+        margin:1.2rem auto;
+    }
+
+    .progress-bar{
+        display: none;
+    }
+    .process-content{
+        margin-top: 20px;
+    }
+    .process .box1,
+    .process .box2,
+    .process .box3{
+        text-align: center;
+    }
+
+    /* Testimony */
+    .testimony .test{
+        margin:1.6rem 0;
+    }
+
+    .contact form input,
+    .contact textarea{
+        width: 100%;
+    }
+
+}
